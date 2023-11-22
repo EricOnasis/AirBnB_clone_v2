@@ -10,10 +10,6 @@ from models.review import Review
 
 class User(BaseModel):
     """This class defines a user by various attributes"""
-    email = ''
-    password = ''
-    first_name = ''
-    last_name = ''
 
     __tablename__ = "users"
     email = Column(String(128), nullable=False)
